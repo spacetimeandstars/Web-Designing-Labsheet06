@@ -1,0 +1,14 @@
+<form onsubmit="return validate()">
+    Name: <input type="text" id="name">
+    <input type="submit">
+</form>
+
+<script>
+function validate() {
+    let x = document.getElementById("name").value;
+    if (x == "") {
+        alert("Name required");
+        return false;
+    }
+}
+</script>
